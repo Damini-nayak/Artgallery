@@ -29,13 +29,10 @@ window.addEventListener('scroll', () => {
 });
 
 
-// const loginbtn = document.querySelector('#sign-in');
-// const signupbtn = document.querySelector('#sign-up');
+
 const loginform = document.querySelector('#login-form');
 const form1 = document.querySelector(".form1");
 const form2 = document.querySelector(".form2");
-// const closelogin = document.querySelector('#closelogin');
-// const closesignup = document.querySelector('#closesignup');
 const signupform = document.querySelector('#signupform');
 
 function login(){
