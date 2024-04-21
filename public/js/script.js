@@ -9,6 +9,7 @@ imageContainers.forEach(function (container) {
   var image = container.querySelector('img');
 
   // Set the height of the container to match the height of the image
+  console.log(image.clientHeight)
   container.style.height = image.clientHeight + 'px';
 });
 
