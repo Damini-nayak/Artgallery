@@ -1,0 +1,54 @@
+<div class="navbar">
+    <p class="logo">WOC</p>
+    <div class="nav-content">
+        <ul>
+            <a href="">
+                <li>HOME</li>
+            </a>
+            <a href="/gallery">
+                <li>GALLERY</li>
+            </a>
+            <a href="#about">
+                <li>ABOUT</li>
+            </a>
+            <a href="#contacts">
+                <li>CONTACT</li>
+            </a>
+            <a href="">
+                <li>SHOP</li>
+            </a>
+                <li class="sign-in" id="sign-in" onclick="login()">SIGN IN</li>
+                <li class="sign-up" id="sign-up" onclick="signup()">SIGN UP</li>
+        </ul>
+    </div>
+</div>
+
+<div class="login-form" id="login-form">
+    <div class="form1">
+        <div class="close" onclick="closelogin()"><img src="img/cross.svg" alt=""></div>
+        <form action="/login">
+            <p>Log In</p>
+            <input type="email" name="email" id="email" placeholder="Email-Id" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <div class="remember-forget"><div class="rememberme"><input type="checkbox" name="rememberme"><label for="rememberme">remember me</label></div><div class="forget"><a href="">forget password?</a></div></div>
+            <button type="submit" class="login-btn">Log In</button>
+            <p class="have-account">Don't have an account? <a href="#" onclick="signup()">sign-up</a></p>
+        </form>
+        </div>
+</div>
+
+<div class="signupform" id="signupform">
+    <div class="form2">
+        <div class="close" onclick="closesignup()"><img src="img/cross.svg" alt=""></div>
+        <form action="/login">
+            <p>Sign Up</p>
+            <input type="text" name="fullname" id="fullname" placeholder="fullname" required>
+            <input type="email" name="email" id="email" placeholder="Email-Id" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
+            <div class="TandC"><input type="checkbox" name="TandC" required><label for="TandC">Terms and Conditions.</label></div>
+            <button type="submit" class="signup-btn">Sign Up</button>
+            <p class="have-account">Already have an account?<a href="#" onclick="login()">log-in</a></p>
+        </form>
+        </div>
+</div>
