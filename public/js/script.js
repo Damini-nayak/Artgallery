@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function() {
+  // Your JavaScript code here
 // Get all image containers
 var imageContainers = document.querySelectorAll('.img-container');
 
@@ -53,3 +55,5 @@ function closelogin(){
   document.body.classList.remove("no-scroll");
 }
 
+
+});
