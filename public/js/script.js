@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // Your JavaScript code here
-// Get all image containers
+window.onload = function() {
+  // Your code here
+  // Get all image containers
 var imageContainers = document.querySelectorAll('.img-container');
 
 // Loop through each image container
@@ -9,9 +9,13 @@ imageContainers.forEach(function (container) {
   var image = container.querySelector('img');
 
   // Set the height of the container to match the height of the image
-  console.log(image.clientHeight)
   container.style.height = image.clientHeight + 'px';
 });
+
+  console.log('Document is fully loaded!');
+};
+
+
 
 
 const navbar = document.querySelector('.navbar');
@@ -56,5 +60,3 @@ function closelogin(){
   document.body.classList.remove("no-scroll");
 }
 
-
-});
