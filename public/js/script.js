@@ -16,8 +16,6 @@ imageContainers.forEach(function (container) {
 };
 
 
-
-
 const navbar = document.querySelector('.navbar');
 const gototop = document.querySelector('.go-to-top');
 window.addEventListener('scroll', () => {
