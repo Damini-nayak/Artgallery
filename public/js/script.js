@@ -1,18 +1,18 @@
 window.onload = function () {
-  // Your code here
-  // Get all image containers
-  var imageContainers = document.querySelectorAll('.img-container');
+  // // Your code here
+  // // Get all image containers
+  // var imageContainers = document.querySelectorAll('.img-container');
 
-  // Loop through each image container
-  imageContainers.forEach(function (container) {
-    // Get the image element within the container
-    var image = container.querySelector('img');
+  // // Loop through each image container
+  // imageContainers.forEach(function (container) {
+  //   // Get the image element within the container
+  //   var image = container.querySelector('img');
 
-    // Set the height of the container to match the height of the image
-    container.style.height = image.clientHeight + 'px';
-  });
+  //   // Set the height of the container to match the height of the image
+  //   container.style.height = image.clientHeight + 'px';
+  // });
 
-  console.log('Document is fully loaded!');
+  // console.log('Document is fully loaded!');
 };
 
 

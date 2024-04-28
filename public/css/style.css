@@ -79,6 +79,14 @@ img {
     box-shadow: 0 0 5px var(--1);
 }
 
+.down{
+    display:none;
+}
+
+.up{
+    display:none;
+}
+
 .section {
     width: 90%;
     margin: 0 5%;
@@ -336,25 +344,6 @@ img {
     transform: scale(1.1);
 }
 
-.collections {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-bottom: 50px;
-}
-
-.collections img {
-    transition: transform 0.5s ease;
-}
-
-.images div {
-    overflow: hidden;
-}
-
-.collections img:hover {
-    transform: scale(1.1);
-}
-
 .login-form,
 .signupform {
     position: fixed;
@@ -455,9 +444,9 @@ input[type="password"] {
     align-items: center;
 }
 
-/* .no-scroll {
+.no-scroll {
     overflow: hidden;
-} */
+}
 
 .have-account {
     font-family: var(--rubik);
@@ -469,6 +458,48 @@ input[type="password"] {
 .have-account a {
     color: var(--1);
 }
+
+
+
+
+
+
+.gallery {
+    column-count: 5;
+    column-gap: 10px;
+}
+
+.artwork {
+    display: inline-block;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.artwork img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px 5px 0 0;
+    transition: transform 0.5s ease;
+}
+
+.artwork img:hover{
+    transform: scale(1.2);
+}
+
+.artwork p {
+    padding: 10px;
+    margin: 0;
+}
+
+
+
+
+
+
 
 
 @media (max-width:1280px) {
