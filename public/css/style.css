@@ -145,8 +145,6 @@ img {
 
 .img-container img {
     width: 100%;
-    background-size: cover;
-    background-position: center;
 }
 
 .div1,
@@ -346,13 +344,15 @@ img {
 
 .login-form,
 .signupform {
-    position: fixed;
+    position: absolute;
+    top:0;
     z-index: 2;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: 100vh;
     display: none;
     justify-content: center;
     align-items: center;
+    background-color: rgb(43, 43, 43, 0.5);
 }
 
 .form1,
@@ -626,6 +626,11 @@ input[type="password"] {
         grid-template-areas: 'navlink navlink contact social'
         'thankyou thankyou thankyou thankyou ';
     }
+
+    .gallery {
+        column-count: 4;
+        /* column-gap: 10px; */
+    }
 }
 
 @media (max-width:768px){
@@ -636,6 +641,10 @@ input[type="password"] {
     .sec1 {
         margin-right: 0;
         margin-bottom: 10%;
+    }
+
+    .slogan h2 {
+        font-size: 26px;
     }
 }
 
@@ -694,4 +703,66 @@ input[type="password"] {
         'social social social social social'
         'thankyou thankyou thankyou thankyou thankyou';
     }
+
+    .gallery {
+        column-count: 3;
+        column-gap: 8px;
+    }
+}
+
+@media (max-width:475px) {
+
+    form {
+        width:270px;
+    }
+    
+}
+
+@media (max-width:360px) {
+
+    .extra-details {
+        margin-bottom:20%;
+    }
+
+    .woc{
+        font-size: 50px;
+    }
+
+    .gallery {
+        column-count: 2;
+        column-gap: 5px;
+    }
+
+    .artwork {
+        margin-bottom: 2px;
+    }
+
+    form {
+        width:250px;
+    }
+    
+}
+
+@media (max-width:320px) {
+
+    .extra-details {
+        margin-bottom:25%;
+    }
+
+    form {
+        width:220px;
+    }
+    
+}
+
+@media (max-width:280px) {
+
+    .woc{
+        font-size: 40px;
+    }
+
+    form {
+        width:200px;
+    }
+    
 }
