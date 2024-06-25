@@ -17,8 +17,8 @@
             <a href="">
                 <li>SHOP</li>
             </a>
-                <li class="sign-in" id="sign-in" onclick="login()">SIGN IN</li>
-                <li class="sign-up" id="sign-up" onclick="signup()">SIGN UP</li>
+                <li class="sign-in" id="sign-in" onclick="login()">LOG IN</li>
+                <li class="sign-up" id="sign-up" onclick="signup()">SIGN IN</li>
         </ul>
     </div>
     <div class="down"><img src="img/down.png" alt="" onclick="navopen()"></div>
@@ -30,11 +30,11 @@
         <div class="close" onclick="closelogin()"><img src="img/cross.svg" alt=""></div>
         <form action="/login">
             <p>Log In</p>
-            <input type="email" name="email" id="email" placeholder="Email-Id" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
             <input type="password" name="password" id="password" placeholder="Password" required>
             <div class="remember-forget"><div class="rememberme"><input type="checkbox" name="rememberme"><label for="rememberme">remember me</label></div><div class="forget"><a href="">forget password?</a></div></div>
-            <button type="submit" class="login-btn">Log In</button>
-            <p class="have-account">Don't have an account? <a href="#" onclick="signup()">sign-up</a></p>
+            <button type="submit" class="login-btn">Login</button>
+            <p class="have-account">Don't have an account? <a href="#" onclick="signup()">signin</a></p>
         </form>
         </div>
 </div>
@@ -43,14 +43,14 @@
     <div class="form2">
         <div class="close" onclick="closesignup()"><img src="img/cross.svg" alt=""></div>
         <form action="/login">
-            <p>Sign Up</p>
+            <p>Sign In</p>
             <input type="text" name="fullname" id="fullname" placeholder="fullname" required>
-            <input type="email" name="email" id="email" placeholder="Email-Id" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
             <input type="password" name="password" id="password" placeholder="Password" required>
             <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
             <div class="TandC"><input type="checkbox" name="TandC" required><label for="TandC">Terms and Conditions.</label></div>
-            <button type="submit" class="signup-btn">Sign Up</button>
-            <p class="have-account">Already have an account?<a href="#" onclick="login()">log-in</a></p>
+            <button type="submit" class="signup-btn">Signin</button>
+            <p class="have-account">Already have an account?<a href="#" onclick="login()">login</a></p>
         </form>
         </div>
 </div>
